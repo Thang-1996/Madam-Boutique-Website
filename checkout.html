@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madam Boutique</title>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <script src="https://kit.fontawesome.com/55a10c6ca4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+</head>
+<body>
+<header>
+        <div class="container-fluid position-menu">
+            <div class="row">
+                <div class="left-header col-xl-5 col-lg-5 d-none d-lg-block">
+                    <ul>
+                        <li class="menu-items parent"><a href="home.html">home</a>
+                            <ul class="submenu fix1">
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="about.html">about</a>
+                            <ul class="submenu fix1">
+                                <li><a href="about.html#contentab">History</a></li>
+                                <li><a href="about.html#creative">Creative People</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="product.html">product</a>
+                            <ul class="submenu">
+                                <li><a href="product.html">Clothes</a></li>
+                                <li><a href="product.html">Bags</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="product.html">Shoes</a></li>
+                                <li><a href="product.html">Scarves</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mid-logo col-xl-2 col-lg-2 col-md-6 col-6">
+                    <a href="home.html"><img src="images/logo.jpg" alt="logo" width="100px"/></a>
+                </div>
+                <div class="right-header col-xl-5 col-lg-5 col-md-6 col-6">
+                    <div class="row">
+                        <div class="search col-md-11 col-sm-11 col-xs-11" onmouseleave="hidesearch()">
+                            <a onclick="showsearch()"  href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-content" id="hide-search" style="display: none;">
+                                <div class="search-text">
+                                    <input name="search" onkeypress="search_enter()" type="text" class="form-control" placeholder="search">
+                                    <button type="button" onclick="search_product();show_content()" class="btn btn-info">Search</button>
+                                </div>
+                                <div class="search-table" >
+                                    <table class="table" id="table">
+                                        <thead>
+                                        <th>Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Thương hiệu</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart col-md-1 col-sm-1 col-xs-1 ">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section>
+    <div class="img-nen">
+        <img src="images/paymentnen.jpg" alt="nen">
+        <div class="text-img">
+            <h4>Checkout Page</h4>
+            <a href="cart.html">Cart</a> \ <span>Checkout</span>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="secure">
+            <div class="secure-left">
+                <i class="fas fa-lock"></i><span>secure checkout</span>
+            </div>
+            <div class="secure-right">
+                <p>               The whole ordering process is supported by Avangate, who handles all transactions details.
+                    Your private data is 199% safe, as Avangate complies with the latest online security standards.</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="tab-list col-lg-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#visa" class="nav-link active" data-toggle="tab">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#paypal" class="nav-link" data-toggle="tab">
+                            <i class="fab fa-cc-paypal"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#mastercard" class="nav-link" data-toggle="tab">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="visa">
+                    <div class="visa-group">
+                        <form action="#" method="POST" class="was-validated">
+                            <div class="billing">
+                                <div class="billing-title">
+                                    <div class="billing-title-left">
+                                        <h2>billing information:</h2>
+                                    </div>
+                                    <div class="billing-title-right">
+                                        <img src="images/payment-method-visa-512.png"/>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>First Name<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="firstname" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Last Name<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="lastname" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Email<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Confirm Email<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="cfemail" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Phone/ Tax <span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="phone" required />
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Address<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="address" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>City<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="City" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Zip or postal code<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="zipcode" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>Country<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <select class="form-control" id="1">
+                                                <option>Please Select</option>
+                                                <option>Việt Nam</option>
+                                                <option>Châu Á</option>
+                                                <option>Châu ÂU</option>
+                                                <option>Châu Mỹ</option>
+                                                <option>Châu Phi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input">
+                                    <div class="input-text">
+                                        <span>State/ Province<span class="star">*</span></span>
+                                    </div>
+                                    <div class="input-content">
+                                        <div class="form-group">
+                                            <select class="form-control" id="3">
+                                                <option>Please Select</option>
+                                                <option>TP HCM</option>
+                                                <option>Đà Nẵng</option>
+                                                <option>Hà Nội</option>
+                                                <option>Đà Lạt</option>
+                                                <option>Vũng Tàu</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment">
+                                <div class="payment-title">
+                                    <div class="payment-title-left">
+                                        <h2>Payment Option:</h2>
+                                    </div>
+                                    <div class="payment-title-right">
+                                        <img src="images/payment.png"/>
+                                    </div>
+                                </div>
+                                <div class="payment-content">
+                                    <div class="input2">
+                                        <p>Card Number <span>*</span></p>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="cardnumber" required/>
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                    <div class="input2">
+                                        <p>Card expiration date <span>*</span></p>
+                                        <div class="select-group">
+                                            <div class="select-group-left">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="4">
+                                                        <option>Please Select</option>
+                                                        <option>2019</option>
+                                                        <option>Less than 2019</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="select-group-right">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="5">
+                                                        <option>Please Select</option>
+                                                        <option>12</option>
+                                                        <option>11</option>
+                                                        <option>10</option>
+                                                        <option>9</option>
+                                                        <option>8</option>
+                                                        <option>7</option>
+                                                        <option>6</option>
+                                                        <option>5</option>
+                                                        <option>4</option>
+                                                        <option>3</option>
+                                                        <option>2</option>
+                                                        <option>1</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input2">
+                                        <p>Card Holder Name <span>*</span></p>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="cardname" required />
+                                            <div class="valid-feedback">Success</div>
+                                            <div class="invalid-feedback">Please fill out this field.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="input3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="2" />
+                                        <label class="form-check-label" for="exampleCheck1">I Agree all information are correct</label>
+                                    </div>
+                                </div>
+                                <div class="input3">
+                                    <button type="submit" class="btn btn-danger">Pay Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="paypal">
+                    <form action="#" method="POST" class="was-validated">
+                    <div class="paypal-group">
+                        <div class="billing">
+                            <div class="billing-title">
+                                <div class="billing-title-left">
+                                    <h2>billing information:</h2>
+                                </div>
+                                <div class="billing-title-right">
+                                    <img src="images/2.png"/>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>First Name<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="firstname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Last Name<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="lastname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Email<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Confirm Email<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="cfemail" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Phone/ Tax <span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="phone" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Address<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="address" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>City<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="City" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Zip or postal code<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="zipcode" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Country<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <select class="form-control" id="6">
+                                            <option>Please Select</option>
+                                            <option>Việt Nam</option>
+                                            <option>Châu Á</option>
+                                            <option>Châu ÂU</option>
+                                            <option>Châu Mỹ</option>
+                                            <option>Châu Phi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>State/ Province<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <select class="form-control" id="7">
+                                            <option>Please Select</option>
+                                            <option>TP HCM</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Hà Nội</option>
+                                            <option>Đà Lạt</option>
+                                            <option>Vũng Tàu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="payment-title">
+                                <div class="payment-title-left">
+                                    <h2>Payment Option:</h2>
+                                </div>
+                                <div class="payment-title-right">
+                                    <img src="images/payment.png"/>
+                                </div>
+                            </div>
+                            <div class="payment-content">
+                                <div class="input2">
+                                    <p>Card Number <span>*</span></p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="cardnumber" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                                <div class="input2">
+                                    <p>Card expiration date <span>*</span></p>
+                                    <div class="select-group">
+                                        <div class="select-group-left">
+                                            <div class="form-group">
+                                                <select class="form-control" id="9">
+                                                    <option>Please Select</option>
+                                                    <option>2019</option>
+                                                    <option>Less than 2019</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-group-right">
+                                            <div class="form-group">
+                                                <select class="form-control" id="8">
+                                                    <option>Please Select</option>
+                                                    <option>12</option>
+                                                    <option>11</option>
+                                                    <option>10</option>
+                                                    <option>9</option>
+                                                    <option>8</option>
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input2">
+                                    <p>Card Holder Name <span>*</span></p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="cardname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="input3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="10">
+                                    <label class="form-check-label" for="exampleCheck1">I Agree all information are correct</label>
+                                </div>
+                            </div>
+                            <div class="input3">
+                                <button type="submit" class="btn btn-danger">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="mastercard">
+                    <form action="#" method="POST" class="was-validated">
+                    <div class="mastercard-group">
+                        <div class="billing">
+                            <div class="billing-title">
+                                <div class="billing-title-left">
+                                    <h2>billing information:</h2>
+                                </div>
+                                <div class="billing-title-right">
+                                    <img src="images/mastercard.png"/>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>First Name<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="firstname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Last Name<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="lastname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Email<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Confirm Email<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="cfemail" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Phone/ Tax <span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="phone" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Address<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="address" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>City<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="City" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Zip or postal code<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="zipcode" required />
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>Country<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <select class="form-control" id="select country">
+                                            <option>Please Select</option>
+                                            <option>Việt Nam</option>
+                                            <option>Châu Á</option>
+                                            <option>Châu ÂU</option>
+                                            <option>Châu Mỹ</option>
+                                            <option>Châu Phi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <div class="input-text">
+                                    <span>State/ Province<span class="star">*</span></span>
+                                </div>
+                                <div class="input-content">
+                                    <div class="form-group">
+                                        <select class="form-control" id="select state">
+                                            <option>Please Select</option>
+                                            <option>TP HCM</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Hà Nội</option>
+                                            <option>Đà Lạt</option>
+                                            <option>Vũng Tàu</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <div class="payment-title">
+                                <div class="payment-title-left">
+                                    <h2>Payment Option:</h2>
+                                </div>
+                                <div class="payment-title-right">
+                                    <img src="images/payment.png"/>
+                                </div>
+                            </div>
+                            <div class="payment-content">
+                                <div class="input2">
+                                    <p>Card Number <span>*</span></p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="cardnumber" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                                <div class="input2">
+                                    <p>Card expiration date <span>*</span></p>
+                                    <div class="select-group">
+                                        <div class="select-group-left">
+                                            <div class="form-group">
+                                                <select class="form-control" id="select year">
+                                                    <option>Please Select</option>
+                                                    <option>2019</option>
+                                                    <option>Less than 2019</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="select-group-right">
+                                            <div class="form-group">
+                                                <select class="form-control" id="select money">
+                                                    <option>Please Select</option>
+                                                    <option>12</option>
+                                                    <option>11</option>
+                                                    <option>10</option>
+                                                    <option>9</option>
+                                                    <option>8</option>
+                                                    <option>7</option>
+                                                    <option>6</option>
+                                                    <option>5</option>
+                                                    <option>4</option>
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input2">
+                                    <p>Card Holder Name <span>*</span></p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="cardname" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="input3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                    <label class="form-check-label" for="exampleCheck1">I Agree all information are correct</label>
+                                    <div class="valid-feedback">Success</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                            </div>
+                            <div class="input3">
+                                <button type="submit" class="btn btn-danger">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <div class="logo-f">
+                <img src="images/logof.jpg.png"/>
+            </div>
+            <div class="ct-name">
+                <p>Madam Boutique Store</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="open-time">
+                <h3>Opening Time</h3>
+                <p>Mon-Fri 8AM-10PM</p>
+                <p>Sat 9AM-10PM</p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/"><p>Email</p></a>
+            </div>
+            <div class="customer-sv">
+                <h3>Customer Service</h3>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="about.html"><p>About Us</p></a>
+            </div>
+        </div>
+        <div class="btt-button">
+            <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <div class="no-copy">
+            <p>Design By Team2 Project No &copy; All Right Reserved 2019</p>
+        </div>
+    </div>
+    <!-- Subiz -->
+    <script>
+        (function(s, u, b, i, z){
+            u[i]=u[i]||function(){
+                u[i].t=+new Date();
+                (u[i].q=u[i].q||[]).push(arguments);
+            };
+            z=s.createElement('script');
+            var zz=s.getElementsByTagName('script')[0];
+            z.async=1; z.src=b; z.id='subiz-script';
+            zz.parentNode.insertBefore(z,zz);
+        })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+        subiz('setAccount', 'acqncnyqfvkzqvqwrgih');
+    </script>
+    <!-- End Subiz -->
+</footer>
+</body>
+<script type="text/javascript" src="js/nivoshow.js"></script>
+<script type="text/javascript" src="js/showbutton.js"></script>
+<script type="text/javascript" src="js/scrollhide.js"></script>
+<script type="text/javascript">
+
+    function search_product() {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/timkiem",
+            method: "GET",
+            data : {
+                search : $('input[name=search]').val(),
+                page : 1
+            },
+            success: function (result) {
+                var html = "";
+                for(i=0;i<result.length;i++){
+                    var tr = "    <tr>\n" +
+                        "<td><img src=\"" + result[i].product_img+
+                        "\"/></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                        "                                            </tr>";
+                    html +=tr;
+                }
+                $('tbody').html(html);
+            }
+
+        });
+    }
+    function search_enter() {
+        if(event.keyCode == 13){
+            $.ajax({
+                url : "https://madamapi.herokuapp.com/api/timkiem",
+                method: "GET",
+                data : {
+                    search : $('input[name=search]').val(),
+                    page : 1
+                },
+                success: function (result) {
+                    var html = "";
+                    for(i=0;i<result.length;i++){
+                        var tr = "    <tr>\n" +
+                            "<td><img src=\"" + result[i].product_img+
+                            "\"/></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                            "                                            </tr>";
+                        html +=tr;
+                    }
+                    $('tbody').html(html);
+                }
+            });
+        }
+    }
+
+</script>
+</html>

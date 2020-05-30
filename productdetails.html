@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madam Boutique</title>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/productdetails.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <script src="https://kit.fontawesome.com/55a10c6ca4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+</head>
+<body>
+<header>
+        <div class="container-fluid position-menu">
+            <div class="row">
+                <div class="left-header col-xl-5 col-lg-5 d-none d-lg-block">
+                    <ul>
+                        <li class="menu-items parent"><a href="home.html">home</a>
+                            <ul class="submenu fix1">
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="about.html">about</a>
+                            <ul class="submenu fix1">
+                                <li><a href="about.html#contentab">History</a></li>
+                                <li><a href="about.html#creative">Creative People</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="product.html">product</a>
+                            <ul class="submenu">
+                                <li><a href="product.html">Clothes</a></li>
+                                <li><a href="product.html">Bags</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="product.html">Shoes</a></li>
+                                <li><a href="product.html">Scarves</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mid-logo col-xl-2 col-lg-2 col-md-6 col-6">
+                    <a href="home.html"><img src="images/logo.jpg" alt="logo" width="100px"/></a>
+                </div>
+                <div class="right-header col-xl-5 col-lg-5 col-md-6 col-6">
+                    <div class="row">
+                        <div class="search col-md-11 col-sm-11 col-xs-11" onmouseleave="hidesearch()">
+                            <a onclick="showsearch()"  href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-content" id="hide-search" style="display: none;">
+                                <div class="search-text">
+                                    <input name="search" onkeypress="search_enter()" type="text" class="form-control" placeholder="search">
+                                    <button type="button" onclick="search_product();show_content()" class="btn btn-info">Search</button>
+                                </div>
+                                <div class="search-table" >
+                                    <table class="table" id="table">
+                                        <thead>
+                                        <th>Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Thương hiệu</th>
+                                        </thead>
+                                        <tbody>
+                                        <!-- search data API data -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart col-md-1 col-sm-1 col-xs-1 ">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section>
+    <div class="img-nen">
+        <img src="images/detail.png" alt="nen">
+        <div class="text-img">
+            <h4>Product Detail</h4>
+            <a href="product.html">Product</a> \ <span>Product Detail</span>
+        </div>
+    </div>
+</section>
+<section>
+    <!-- write section here -->
+    <div class="container">
+        <div class="product-details-top">
+            <!-- detailt API data -->
+        </div>
+        <div class="product-details-mid">
+            <div class="menu-bar">
+                <div class="bar-list">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#des" class="nav-link active" data-toggle="tab">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#review" class="nav-link" data-toggle="tab">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#comment" class="nav-link" data-toggle="tab">Comment</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="des">
+                        <div class="des-box">
+                            <!-- des api -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="review">
+                        <div class="review-box">
+                            <form action="#" method="POST" class="was-validated">
+                                <div class="review-title">
+                                    <h5>Reviews:</h5>
+                                </div>
+                                <div class="review-content">
+                                    <p>Review about our product here</p>
+                                    <div class="form-group">
+                                        <label for="comment">Your Review:</label>
+                                        <textarea class="form-control" rows="5" id="reviewtext" id="comment1" required></textarea>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="comment">Name:</label>
+                                        <input type="text" class="form-control" rows="5" id="name" required/>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment">Email:</label>
+                                        <input type="text" class="form-control" rows="5" id="email" required>
+                                        <div class="valid-feedback">Success</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" onclick="notice()" class="btn btn-info">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="comment">
+                        <div class="comment-box">
+                            <div class="form-group">
+                                <label for="comment">Comment:</label>
+                                <textarea class="form-control" rows="5" id="textcomment"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-info">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-details-bottom">
+            <div class="related-product">
+                <h2>Related Product</h2>
+                <p>Order online and have your products delivered to your closest store for free</p>
+            </div>
+            <div class="related-product-content">
+                <div class="owl-carousel owl-theme product">
+                    <!-- relate product API data -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <div class="logo-f">
+                <img src="images/logof.jpg.png"/>
+            </div>
+            <div class="ct-name">
+                <p>Madam Boutique Store</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="open-time">
+                <h3>Opening Time</h3>
+                <p>Mon-Fri 8AM-10PM</p>
+                <p>Sat 9AM-10PM</p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/"><p>Email</p></a>
+            </div>
+            <div class="customer-sv">
+                <h3>Customer Service</h3>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="about.html"><p>About Us</p></a>
+            </div>
+        </div>
+        <div class="btt-button">
+            <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <div class="no-copy">
+            <p>Design By Team2 Project No &copy; All Right Reserved 2019</p>
+        </div>
+    </div>
+    <!-- Subiz -->
+    <script>
+        (function(s, u, b, i, z){
+            u[i]=u[i]||function(){
+                u[i].t=+new Date();
+                (u[i].q=u[i].q||[]).push(arguments);
+            };
+            z=s.createElement('script');
+            var zz=s.getElementsByTagName('script')[0];
+            z.async=1; z.src=b; z.id='subiz-script';
+            zz.parentNode.insertBefore(z,zz);
+        })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+        subiz('setAccount', 'acqncnyqfvkzqvqwrgih');
+    </script>
+    <!-- End Subiz -->
+</footer>
+</body>
+<script type="text/javascript" src="js/nivoshow.js"></script>
+<script type="text/javascript" src="js/showbutton.js"></script>
+<script type="text/javascript" src="js/scrollhide.js"></script>
+<script type="text/javascript">
+    $(".product-details-top").html("<img class='loading' src='images/loadinggif.gif'/>");
+    var urlParams =  new URLSearchParams(window.location.search);
+    var id = urlParams.get("id");
+    $.ajax({
+        url: "https://madamapi.herokuapp.com/api/chitiet",
+        method: "GET",
+        data:{
+            id : id
+        },
+        success: function (result) {
+            setTimeout(function () {
+                $(".product-details-top").html(" ");
+                var detailt = "      <div class=\"pd-top-left\">\n" +
+                    "                <img src=\"" + result.chitiet.product_img +
+                    "\">\n" +
+                    "            </div>\n" +
+                    "            <div class=\"pd-top-right\">\n" +
+                    "                <div class=\"pd-top-r-title\">\n" +
+                    "                    <h4>" + result.chitiet.product_name +
+                    "</h4>\n" +
+                    "                    <p><i class=\"fas fa-star\"></i>\n" +
+                    "                        <i class=\"fas fa-star\"></i>\n" +
+                    "                        <i class=\"fas fa-star\"></i>\n" +
+                    "                        <i class=\"fas fa-star\"></i>\n" +
+                    "                        <i class=\"fas fa-star\"></i></p>\n" +
+                    "                </div>\n" +
+                    "                <div class=\"pd-top-r-text\">\n" +
+                    "                    <span class=\"price-color\">$" + result.chitiet.price +
+                    "</span>\n" +
+                    "                    <span>Brands: <a href=\"#\">" + result.chitiet.product_trademark +
+                    "</a></span>\n" +
+                    "                    <span>Product Code: <a href=\"#\">" + result.chitiet.category_name +
+                    "</a></span>\n" +
+                    "                    <span>Amount: <a href=\"#\">400</a></span>\n" +
+                    "                    <span>Availability: <a href=\"#\">" + result.chitiet.status_name +
+                    "</a></span>\n" +
+                    "                </div>\n" +
+                    "                <div class=\"pd-top-r-select\">\n" +
+                    "                        <div class=\"form-group\">\n" +
+                    "                            <label for=\"choice\">Choose Size:</label>\n" +
+                    "                            <select class=\"form-control\" id=\"choice\">\n" +
+                    "                                <option>L</option>\n" +
+                    "                                <option>M</option>\n" +
+                    "                                <option>S</option>\n" +
+                    "                                <option>XL</option>\n" +
+                    "                                <option>XS</option>\n" +
+                    "                                <option>XXL</option>\n" +
+                    "                            </select>\n" +
+                    "                        </div>\n" +
+                    "                </div>\n" +
+                    "                <div class=\"cart-button\">\n" +
+                    "                    <div class=\"cart-b\">\n" +
+                    "                        <a href=\"cart.html\">add to card</a>\n" +
+                    "                    </div>\n" +
+                    "                    <div class=\"buy-b\">\n" +
+                    "                        <a href=\"cart.html\">buy now</a>\n" +
+                    "                    </div>\n" +
+                    "                </div>\n" +
+                    "            </div>";
+                $(".product-details-top").append(detailt);
+            },500);
+            var des_box = "       <div class=\"title-des\">\n" +
+                "                                <h4>Product Information</h4>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info1\">\n" +
+                "                                <div class=\"info-left1\">\n" +
+                "                                    <span>Product Name: </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right1\">\n" +
+                "                                    <span>" + result.chitiet.product_name+
+                "</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info2\">\n" +
+                "                                <div class=\"info-left2\">\n" +
+                "                                    <span>Product Trademark: </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right2\">\n" +
+                "                                    <span>" + result.chitiet.product_trademark+
+                "</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info1\">\n" +
+                "                                <div class=\"info-left1\">\n" +
+                "                                    <span>Product Type : </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right1\">\n" +
+                "                                    <span>" + result.chitiet.category_name+
+                "</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info2\">\n" +
+                "                                <div class=\"info-left2\">\n" +
+                "                                    <span>Product Amount: </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right2\">\n" +
+                "                                    <span>400</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info1\">\n" +
+                "                                <div class=\"info-left1\">\n" +
+                "                                    <span>Product Price: </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right1\">\n" +
+                "                                    <span>" + result.chitiet.price+
+                "$</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"info2\">\n" +
+                "                                <div class=\"info-left2\">\n" +
+                "                                    <span>Product Status: </span>\n" +
+                "                                </div>\n" +
+                "                                <div class=\"info-right2\">\n" +
+                "                                    <span>" + result.chitiet.status_name+
+                "</span>\n" +
+                "                                </div>\n" +
+                "                            </div>\n" +
+                "                            <div class=\"free_ship\">\n" +
+                "                                <h6>**Delivery World Wide By Plan 24/7**</h6>\n" +
+                "                                <h6>**Free shipping on orders over $ 5,000**</h6>\n" +
+                "                                <h6>**MoneyBack With Any Issues In 365 Days**</h6>\n" +
+                "                            </div>";
+            $(".des-box").append(des_box);
+            for (i = 0; i < result.lienquan.length; i++) {
+                var lienquan = "       <div class=\"product-box1\">\n" +
+                    "                        <div class=\"product-img\">\n" +
+                    "                            <a href=\"productdetails.html?id="+result.lienquan[i].product_id+"\"><img src=\"" + result.lienquan[i].product_img+
+                    "\"/></a>\n" +
+                    "                        </div>\n" +
+                    "                        <div class=\"product-content1\">\n" +
+                    "                            <div class=\"trademark\">\n" +
+                    "                                <span>" + result.lienquan[i].product_trademark+
+                    "</span>\n" +
+                    "                            </div>\n" +
+                    "                            <div class=\"rate\">\n" +
+                    "                                <i class=\"fas fa-star\"></i>\n" +
+                    "                                <i class=\"fas fa-star\"></i>\n" +
+                    "                                <i class=\"fas fa-star\"></i>\n" +
+                    "                                <i class=\"fas fa-star\"></i>\n" +
+                    "                                <i class=\"fas fa-star\"></i>\n" +
+                    "                            </div>\n" +
+                    "                        </div>\n" +
+                    "                        <div class=\"product-name\">\n" +
+                    "                            <a href=\"productdetails.html?id="+result.lienquan[i].product_id+"\"><p class=\"p1\">" + result.lienquan[i].product_name+
+                    "</p></a>\n" +
+                    "                            <p class=\"p2\">$" + result.lienquan[i].price+
+                    "</p>\n" +
+                    "                        </div>\n" +
+                    "                    </div>";
+                $(".product").append(lienquan);
+            }
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                autoplay: true,
+                autoplaySpeed: 500,
+                navText: ["<img src='images/prev.png'>", "<img src='images/next.png'>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        }
+    });
+</script>
+<script type="text/javascript">
+
+    function search_product() {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/timkiem",
+            method: "GET",
+            data : {
+                search : $('input[name=search]').val(),
+                page : 1
+            },
+            success: function (result) {
+                var html = "";
+                for(i=0;i<result.length;i++){
+                    var tr = "    <tr>\n" +
+                        "<td><img src=\"" + result[i].product_img+
+                        "\"/></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                        "                                            </tr>";
+                    html +=tr;
+                }
+                $('tbody').html(html);
+            }
+
+        });
+    }
+    function search_enter() {
+        if(event.keyCode == 13){
+            $.ajax({
+                url : "https://madamapi.herokuapp.com/api/timkiem",
+                method: "GET",
+                data : {
+                    search : $('input[name=search]').val(),
+                    page : 1
+                },
+                success: function (result) {
+                    var html = "";
+                    for(i=0;i<result.length;i++){
+                        var tr = "    <tr>\n" +
+                            "<td><img src=\"" + result[i].product_img+
+                            "\"/></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                            "                                            </tr>";
+                        html +=tr;
+                    }
+                    $('tbody').html(html);
+                }
+            });
+        }
+    }
+
+</script>
+
+</html>

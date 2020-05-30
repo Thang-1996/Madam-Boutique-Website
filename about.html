@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madam Boutique</title>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/nivo-slider.css" rel="stylesheet" type="text/css"/>
+    <link href="css/default.css" rel="stylesheet" type="text/css"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/55a10c6ca4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+        <div class="container-fluid position-menu">
+            <div class="row">
+                <div class="left-header col-xl-5 col-lg-5 d-none d-lg-block">
+                    <ul>
+                        <li class="menu-items parent"><a href="home.html">home</a>
+                            <ul class="submenu fix1">
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="about.html">about</a>
+                            <ul class="submenu fix1">
+                                <li><a href="about.html#contentab">History</a></li>
+                                <li><a href="about.html#creative">Creative People</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="product.html">product</a>
+                            <ul class="submenu">
+                                <li><a href="product.html">Clothes</a></li>
+                                <li><a href="product.html">Bags</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="product.html">Shoes</a></li>
+                                <li><a href="product.html">Scarves</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mid-logo col-xl-2 col-lg-2 col-md-6 col-6">
+                    <a href="home.html"><img alt="logo" src="images/logo.jpg" width="100px"/></a>
+                </div>
+                <div class="right-header col-xl-5 col-lg-5 col-md-6 col-6">
+                    <div class="row">
+                        <div class="search col-md-11 col-sm-11 col-xs-11" onmouseleave="hidesearch()">
+                            <a onclick="showsearch()"  href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-content" id="hide-search" style="display: none;">
+                                <div class="search-text">
+                                    <input name="search" onkeypress="search_enter()" type="text" class="form-control" placeholder="search">
+                                    <button type="button" onclick="search_product();show_content()" class="btn btn-info">Search</button>
+                                </div>
+                                <div class="search-table" >
+                                    <table class="table" id="table">
+                                        <thead>
+                                        <th>Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Thương hiệu</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart col-md-1 col-sm-1 col-xs-1 ">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section>
+        <div class="img-nen">
+            <img src="images/detail2.jpg" alt="nen">
+            <div class="text-img">
+                <h4>ABOUT US</h4>
+                <a href="home.html">Home</a> \ <span>About Us</span>
+            </div>
+        </div>
+</section>
+<section>
+    <div class="container">
+        <div class="about-content" id="contentab">
+            <div class="img-left">
+                <img src="https://photo-2-baomoi.zadn.vn/w1000_r1/2019_05_21_181_30790384/7431d55ec01e2940700f.jpg" alt="a1">
+            </div>
+            <div class="text-right">
+                <p>
+                    MADAME là một nền tảng thương mại điện tử thời trang nhanh B2C quốc tế. Công ty chủ yếu tập trung
+                    vào
+                    trang phục của phụ nữ, nhưng cũng cung cấp quần áo nam, quần áo trẻ em, phụ kiện, giày dép, túi xách
+                    và các mặt hàng thời trang khác. MADAME chủ yếu nhắm vào Châu Âu, Châu Mỹ, Úc và Trung Đông cùng với
+                    các thị trường tiêu dùng khác. Thương hiệu được thành lập vào tháng 10 năm 2008, duy trì quan điểm
+                    "mọi người đều có thể tận hưởng vẻ đẹp của thời trang". Hoạt động kinh doanh bao gồm hơn 220 quốc
+                    gia và khu vực trên toàn thế giới.
+                </p>
+            </div>
+        </div>
+        <div class="about-content2">
+            <div class="content2">
+                <div class="img-ct">
+                    <img src="images/icon5.png" alt="icon"/>
+                </div>
+                <div class="text-ct">
+                    <p>free shiping</p>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="img-ct">
+                    <img src="images/icon2.png" alt="icon"/>
+                </div>
+                <div class="text-ct">
+                    <p>Offline store</p>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="img-ct">
+                    <img src="images/icon3.png" alt="icon"/>
+                </div>
+                <div class="text-ct">
+                    <p>Quick responses</p>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="img-ct">
+                    <img src="images/icon4.png" alt="icon"/>
+                </div>
+                <div class="text-ct">
+                    <p>discount system</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-title3">
+            <h1>creative people</h1>
+        </div>
+        <div class="about-content3" id="creative">
+
+            <div class="content3">
+                <div class="img-ct3">
+                    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="icon"/>
+                </div>
+                <div class="text-ct3">
+                    <h6>Trần Thanh Hải</h6>
+                    <a>Team member</a>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="img-ct3">
+                    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="icon"/>
+                </div>
+                <div class="text-ct3">
+                    <h6>Nguyễn Hùng Cường</h6>
+                    <a>Team member</a>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="img-ct3">
+                    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="icon"/>
+                </div>
+                <div class="text-ct3">
+                    <h6>Nguyễn Minh Thắng</h6>
+                    <a>Team member</a>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="img-ct3">
+                    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="icon"/>
+                </div>
+                <div class="text-ct3">
+                    <h6>Vũ Quang Minh</h6>
+                    <a>Team member</a>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="img-ct3">
+                    <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="icon"/>
+                </div>
+                <div class="text-ct3">
+                    <h6>Nguyễn Văn Điệp</h6>
+                    <a>Team member</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <div class="logo-f">
+                <img src="images/logof.jpg.png"/>
+            </div>
+            <div class="ct-name">
+                <p>Madam Boutique Store</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="open-time">
+                <h3>Opening Time</h3>
+                <p>Mon-Fri 8AM-10PM</p>
+                <p>Sat 9AM-10PM</p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/"><p>Email</p></a>
+            </div>
+            <div class="customer-sv">
+                <h3>Customer Service</h3>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="about.html"><p>About Us</p></a>
+            </div>
+        </div>
+        <div class="btt-button">
+            <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <div class="no-copy">
+            <p>Design By Team2 Project No &copy; All Right Reserved 2019</p>
+        </div>
+    </div>
+    <!-- Subiz -->
+    <script>
+        (function(s, u, b, i, z){
+            u[i]=u[i]||function(){
+                u[i].t=+new Date();
+                (u[i].q=u[i].q||[]).push(arguments);
+            };
+            z=s.createElement('script');
+            var zz=s.getElementsByTagName('script')[0];
+            z.async=1; z.src=b; z.id='subiz-script';
+            zz.parentNode.insertBefore(z,zz);
+        })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+        subiz('setAccount', 'acqncnyqfvkzqvqwrgih');
+    </script>
+    <!-- End Subiz -->
+</footer>
+</body>
+<script type="text/javascript" src="js/nivoshow.js"></script>
+<script type="text/javascript" src="js/showbutton.js"></script>
+<script type="text/javascript" src="js/scrollhide.js"></script>
+<script type="text/javascript">
+
+    function search_product() {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/timkiem",
+            method: "GET",
+            data : {
+                search : $('input[name=search]').val(),
+                page : 1
+            },
+            success: function (result) {
+                var html = "";
+                for(i=0;i<result.length;i++){
+                    var tr = "    <tr>\n" +
+                        "<td><img src=\"" + result[i].product_img+
+                        "\"/></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                        "                                            </tr>";
+                    html +=tr;
+                }
+                $('tbody').html(html);
+            }
+
+        });
+    }
+    function search_enter() {
+        if(event.keyCode == 13){
+            $.ajax({
+                url : "https://madamapi.herokuapp.com/api/timkiem",
+                method: "GET",
+                data : {
+                    search : $('input[name=search]').val(),
+                    page : 1
+                },
+                success: function (result) {
+                    var html = "";
+                    for(i=0;i<result.length;i++){
+                        var tr = "    <tr>\n" +
+                            "<td><img src=\"" + result[i].product_img+
+                            "\"/></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                            "                                            </tr>";
+                        html +=tr;
+                    }
+                    $('tbody').html(html);
+                }
+            });
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madam Boutique</title>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <script src="https://kit.fontawesome.com/55a10c6ca4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+</head>
+<body>
+<header>
+    <div class="slider-wrapper theme-default big-slide">
+        <div id="slider" class="nivoSlider">
+            <img src="images/slide3.jpg" data-thumb="images/slide3.jpg" alt="slide3"/>
+            <img src="images/slide4.jpg" data-thumb="images/slide4.jpg" alt="slide4"/>
+            <img src="images/slide1.jpg" data-thumb="images/slide1.jpg" alt="slide1"/>
+            <img src="images/slide2.jpg" data-thumb="images/slide2.jpg" alt="slide2"/>
+            <img src="images/slide5.jpg" data-thumb="images/slide5.jpg" alt="slide5" data-transition="slideInLeft"/>
+        </div>
+        <div class="container-fluid position-menu">
+            <div class="row">
+                <div class="left-header col-xl-5 col-lg-5 d-none d-lg-block">
+                    <ul>
+                        <li class="menu-items parent"><a href="home.html">home</a>
+                        </li>
+                        <li class="menu-items parent"><a href="about.html">about</a>
+                            <ul class="submenu fix1">
+                                <li><a href="about.html#contentab">History</a></li>
+                                <li><a href="about.html#creative">Creative People</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="product.html">product</a>
+                            <ul class="submenu">
+                                <li><a href="product.html" >Clothes</a></li>
+                                <li><a href="product.html">Bags</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="product.html">Shoes</a></li>
+                                <li><a href="product.html">Scarves</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mid-logo col-xl-2 col-lg-2 col-md-6 col-6">
+                    <a href="home.html"><img src="images/logo.jpg" alt="logo" width="100px"/></a>
+                </div>
+                <div class="right-header col-xl-5 col-lg-5 col-md-6 col-6">
+                    <div class="row">
+                        <div class="search col-md-11 col-sm-11 col-xs-11" onmouseleave="hidesearch()">
+                            <a onclick="showsearch()" href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-content">
+                                <div class="search-text">
+                                    <input name="search" onkeypress="search_enter()" type="text" class="form-control"
+                                           placeholder="search">
+                                    <button type="button" onclick="search_product();show_content()"
+                                            class="btn btn-info">Search
+                                    </button>
+                                </div>
+                                <div class="search-table">
+                                    <table class="table" id="table">
+                                        <thead>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>TradeMark</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart col-md-1 col-sm-1 col-xs-1 ">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-text">
+            <h2>hi there</h2>
+            <p>Welcome to our web site happy shopping &hearts;</p>
+            <a href="product.html">Shop now</a>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="intro">
+            <div class="title">
+                <h2>welcome to madam-boutique</h2>
+            </div>
+            <div class="banner-intro">
+                <img src="images/bannerintro.png" alt="banner-intro">
+            </div>
+            <div class="intro-content">
+                <p>Our shop selling everything new about clothes accessories and much more happy shopping!</p>
+                <p><strong>Team2</strong> - CEO Madame</p>
+            </div>
+        </div>
+        <div class="category-title">
+            <h2>Category List</h2>
+            <p>Click to access our product</p>
+        </div>
+        <div class="category">
+            <div class="cate-group-1">
+                <div class="cate-g1-1">
+                    <img src="images/bannercate2.jpg" alt="banner-cate-2"/>
+                    <a href="product.html">Accesories</a>
+                </div>
+                <div class="cate-g1-2">
+                    <img src="images/bannercate3.jpg" alt="banner-cate-3"/>
+                    <a href="product.html">Scarves</a>
+                </div>
+            </div>
+            <div class="cate-group-2">
+                <div class="cate-g2-1">
+                    <img src="images/bannercate4.jpg" alt="banner-cate-4"/>
+                    <a href="product.html">Bags</a>
+                </div>
+                <div class="cate-g2-2">
+                    <img src="images/bannercate5.jpg" alt="banner-cate-5"/>
+                    <a href="product.html">Shoes</a>
+                </div>
+            </div>
+            <div class="cate-group-3">
+                <img src="images/bannercate1.jpg" alt="banner-cate-1"/>
+                <a href="product.html">Clothes</a>
+            </div>
+        </div>
+        <div class="new-product col-lg-12">
+            <div class="title col-lg-12">
+                <h2>new product</h2>
+                <p>Everything new about clothes and accessories</p>
+            </div>
+        </div>
+        <div class="tab-list col-lg-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#clothes" class="nav-link active" data-toggle="tab">Clothes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bags" class="nav-link" data-toggle="tab">Bags</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#access" class="nav-link" data-toggle="tab">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shoes" class="nav-link" data-toggle="tab">Shoes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#scarves" class="nav-link" data-toggle="tab">Scarves</a>
+                </li>
+            </ul>
+        </div>
+        <!-- New product API -->
+        <div class="tab-content col-lg-12">
+            <div class="tab-pane fade show active" id="clothes">
+                <div class="clothes-group">
+                    <!-- clothes API data-->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bags">
+                <div class="bag-group">
+                    <!--bags API data -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="access">
+                <div class="access-group">
+                    <!-- access API data -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="shoes">
+                <div class="shoes-group">
+                    <!-- shoes API data -->
+                </div>
+            </div>
+            <div class="tab-pane fade" id="scarves">
+                <div class="scarves-group">
+                    <!-- scarves API data -->
+                </div>
+            </div>
+        </div>
+        <!-- new product api end -->
+        <!-- hot product api -->
+        <div class="hot-product col-lg-12">
+            <div class="hot-title col-lg-12">
+                <h2>hot product</h2>
+                <p>best seller clothes and accessories</p>
+            </div>
+        </div>
+        <div class="hot-product-content">
+            <div class="owl-carousel owl-theme product col-xl-12 col-lg-12 col-md-12 col-12">
+                <!-- hot product API data-->
+            </div>
+        </div>
+        <!-- hot product api end -->
+        <div class="banner col-xl-12 col-lg-12 col-md-12 col-12">
+            <div class="row">
+                <div class="banner-1 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="banner-img-1">
+                        <img src="images/bannerbottom1.jpg" alt="bannerbottom1"/>
+                    </div>
+                    <div class="banner-info-1">
+                        <p>new sale</p>
+                        <h4>extra over 50% for month</h4>
+                        <a href="product.html">shop now</a>
+                    </div>
+                </div>
+                <div class="banner-2 col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="banner-img-2">
+                        <img src="images/bannerbottom2.jpg" alt="bannerbottom2"/>
+                    </div>
+                    <div class="banner-info-2">
+                        <p>new Gift</p>
+                        <h4>Gift for vip member</h4>
+                        <a href="product.html">shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pr-text">
+            <div class="row">
+                <div class="pr-1 col-xl-4 col-lg-4 col-md-4 col-12">
+                    <div class="pr-img-1">
+                        <img src="images/freeship.png" alt="freeshipicon"/>
+                    </div>
+                    <div class="pr-img-text-1">
+                        <h2>free shipping worldwide</h2>
+                        <p>Free shipping 24/7</p>
+                    </div>
+                </div>
+                <div class="pr-2 col-xl-4 col-lg-4 col-md-4 col-12">
+                    <div class="pr-img-2">
+                        <img src="images/moneyback.png" alt="moneybackicon"/>
+                    </div>
+                    <div class="pr-img-text-2">
+                        <h2>money back guarantee</h2>
+                        <p>Money back in bank anytime</p>
+                    </div>
+                </div>
+                <div class="pr-3 col-xl-4 col-lg-4 col-md-4 col-12">
+                    <div class="pr-img-3">
+                        <img src="images/support.png" alt="support icon"/>
+                    </div>
+                    <div class="pr-img-text-3">
+                        <h2>online support 24/7</h2>
+                        <p>Support Hot-Line 19001878 Online 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-from">
+            <div class="sub-from-intro">
+                <p>Special Offers For Subscribers Member</p>
+                <h1>ten percent member discount</h1>
+                <p>Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.</p>
+            </div>
+            <div class="from-group from2">
+                <form action="#" method="POST" data-toggle="validator" role="form">
+                <input type="text" class="form-control" name="emailsub" placeholder="Enter your email address here..." required>
+                <button type="submit" class="btn btn-danger">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <div class="logo-f">
+                <img src="images/logof.jpg.png"/>
+            </div>
+            <div class="ct-name">
+                <p>Madam Boutique Store</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="open-time">
+                <h3>Opening Time</h3>
+                <p>Mon-Fri 8AM-10PM</p>
+                <p>Sat 9AM-10PM</p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/"><p>Email</p></a>
+            </div>
+            <div class="customer-sv">
+                <h3>Customer Service</h3>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="about.html"><p>About Us</p></a>
+            </div>
+        </div>
+        <div class="btt-button">
+            <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <div class="no-copy">
+            <p>Design By Team2 Project No &copy; All Right Reserved 2019</p>
+        </div>
+    </div>
+    <!-- Subiz -->
+    <script>
+        (function(s, u, b, i, z){
+            u[i]=u[i]||function(){
+                u[i].t=+new Date();
+                (u[i].q=u[i].q||[]).push(arguments);
+            };
+            z=s.createElement('script');
+            var zz=s.getElementsByTagName('script')[0];
+            z.async=1; z.src=b; z.id='subiz-script';
+            zz.parentNode.insertBefore(z,zz);
+        })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+        subiz('setAccount', 'acqncnyqfvkzqvqwrgih');
+    </script>
+    <!-- End Subiz -->
+</footer>
+</body>
+<script type="text/javascript" src="js/scrollhide.js"></script>
+<script type="text/javascript" src="js/nivoshow.js"></script>
+<script type="text/javascript" src="js/showbutton.js"></script>
+<script type="text/javascript">
+    function abc() {
+        $(".clothes-group").html("<img class='loading' src='images/loadinggif.gif'/>");
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/home",
+            method: "GET",
+            success: function (result) {
+                setTimeout(function () {
+                    $(".clothes-group").html(" ");
+                    for (i = 0; i < result.new_clothes.length; i++) {
+                        var clothes = "    <div class=\"product-box\">\n" +
+                            "                        <div class=\"product-img\">\n" +
+                            "                            <a href=\"productdetails.html?id=" + result.new_clothes[i].product_id + "\"><img src=\"" + result.new_clothes[i].product_img +
+                            "\"/></a>\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"product-content1\">\n" +
+                            "                            <div class=\"trademark\">\n" +
+                            "                                <span>" + result.new_clothes[i].product_trademark +
+                            "</span>\n" +
+                            "                            </div>\n" +
+                            "                            <div class=\"rate\">\n" +
+                            "                                <i class=\"fas fa-star\"></i>\n" +
+                            "                                <i class=\"fas fa-star\"></i>\n" +
+                            "                                <i class=\"fas fa-star\"></i>\n" +
+                            "                                <i class=\"fas fa-star\"></i>\n" +
+                            "                                <i class=\"fas fa-star\"></i>\n" +
+                            "                            </div>\n" +
+                            "                        </div>\n" +
+                            "                        <div class=\"product-name\">\n" +
+                            "                            <a href=\"productdetails.html?id=" + result.new_clothes[i].product_id + "\"><p class=\"p1\">" + result.new_clothes[i].product_name +
+                            "</p></a>\n" +
+                            "                            <p class=\"p2\">$" + result.new_clothes[i].price +
+                            "</p>\n" +
+                            "                        </div>\n" +
+                            "                    </div>";
+                        $(".clothes-group").append(clothes);
+                    }
+                }, 500);
+                for (i = 0; i < result.new_bag.length; i++) {
+                    var bag = "    <div class=\"product-box\">\n" +
+                        "                        <div class=\"product-img\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_bag[i].product_id + "\"><img src=\"" + result.new_bag[i].product_img +
+                        "\"/></a>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-content1\">\n" +
+                        "                            <div class=\"trademark\">\n" +
+                        "                                <span>" + result.new_bag[i].product_trademark +
+                        "</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"rate\">\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-name\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_bag[i].product_id + "\"><p class=\"p1\">" + result.new_bag[i].product_name +
+                        "</p></a>\n" +
+                        "                            <p class=\"p2\">$" + result.new_bag[i].price +
+                        "</p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>";
+                    $(".bag-group").append(bag);
+                }
+                for (i = 0; i < result.new_access.length; i++) {
+                    var access = "    <div class=\"product-box\">\n" +
+                        "                        <div class=\"product-img\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_access[i].product_id + "\"><img src=\"" + result.new_access[i].product_img +
+                        "\"/></a>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-content1\">\n" +
+                        "                            <div class=\"trademark\">\n" +
+                        "                                <span>" + result.new_access[i].product_trademark +
+                        "</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"rate\">\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-name\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_access[i].product_id + "\"><p class=\"p1\">" + result.new_access[i].product_name +
+                        "</p></a>\n" +
+                        "                            <p class=\"p2\">$" + result.new_access[i].price +
+                        "</p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>";
+                    $(".access-group").append(access);
+                }
+                for (i = 0; i < result.new_shoes.length; i++) {
+                    var shoes = "    <div class=\"product-box\">\n" +
+                        "                        <div class=\"product-img\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_shoes[i].product_id + "\"><img src=\"" + result.new_shoes[i].product_img +
+                        "\"/></a>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-content1\">\n" +
+                        "                            <div class=\"trademark\">\n" +
+                        "                                <span>" + result.new_shoes[i].product_trademark +
+                        "</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"rate\">\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-name\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_shoes[i].product_id + "\"><p class=\"p1\">" + result.new_shoes[i].product_name +
+                        "</p></a>\n" +
+                        "                            <p class=\"p2\">$" + result.new_shoes[i].price +
+                        "</p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>";
+                    $(".shoes-group").append(shoes);
+                }
+                for (i = 0; i < result.new_scarves.length; i++) {
+                    var scarves = "    <div class=\"product-box\">\n" +
+                        "                        <div class=\"product-img\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_scarves[i].product_id + "\"><img src=\"" + result.new_scarves[i].product_img +
+                        "\"/></a>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-content1\">\n" +
+                        "                            <div class=\"trademark\">\n" +
+                        "                                <span>" + result.new_scarves[i].product_trademark +
+                        "</span>\n" +
+                        "                            </div>\n" +
+                        "                            <div class=\"rate\">\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                                <i class=\"fas fa-star\"></i>\n" +
+                        "                            </div>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"product-name\">\n" +
+                        "                            <a href=\"productdetails.html?id=" + result.new_scarves[i].product_id + "\"><p class=\"p1\">" + result.new_scarves[i].product_name +
+                        "</p></a>\n" +
+                        "                            <p class=\"p2\">$" + result.new_scarves[i].price +
+                        "</p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>";
+                    $(".scarves-group").append(scarves);
+                }
+                for (i = 0; i < result.hot_product.length; i++) {
+
+                    var hot_product = " <div class=\"product-box1\">\n" +
+                        "                    <div class=\"product-img\">\n" +
+                        "                        <a href=\"productdetails.html?id=" + result.hot_product[i].product_id + "\"><img src=\"" + result.hot_product[i].product_img +
+                        "\"/></a>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"product-content1\">\n" +
+                        "                        <div class=\"trademark\">\n" +
+                        "                            <span>" + result.hot_product[i].product_trademark +
+                        "</span>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"rate\">\n" +
+                        "                            <i class=\"fas fa-star\"></i>\n" +
+                        "                            <i class=\"fas fa-star\"></i>\n" +
+                        "                            <i class=\"fas fa-star\"></i>\n" +
+                        "                            <i class=\"fas fa-star\"></i>\n" +
+                        "                            <i class=\"fas fa-star\"></i>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"product-name\">\n" +
+                        "                        <a href=\"productdetails.html?id=" + result.hot_product[i].product_id + "\"><p class=\"p1\">" + result.hot_product[i].product_name +
+                        "</p></a>\n" +
+                        "                        <p class=\"p2\">$" + result.hot_product[i].price +
+                        "</p>\n" +
+                        "                    </div>\n" +
+                        "                </div>";
+                    $(".product").append(hot_product);
+                }
+                    $('.owl-carousel').owlCarousel({
+                        loop: true,
+                        margin: 20,
+                        nav: true,
+                        autoplay: true,
+                        autoplaySpeed: 500,
+                        navText: ["<img src='images/prev.png'>", "<img src='images/next.png'>"],
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 2
+                            },
+                            1000: {
+                                items: 4
+                            }
+                        }
+                    });
+            }
+        });
+    }
+    $(document).ready(function () {
+        abc();
+    })
+</script>
+<script type="text/javascript">
+
+    function search_product() {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/timkiem",
+            method: "GET",
+            data: {
+                search: $('input[name=search]').val(),
+                page: 1
+            },
+            success: function (result) {
+                var html = "";
+                for (i = 0; i < result.length; i++) {
+                    var tr = "    <tr>\n" +
+                        "<td><img src=\"" + result[i].product_img +
+                        "\"/></td>\n" +
+                        "<td><a href=\"productdetails.html?id=" + result[i].product_id + "\">" + result[i].product_name + "</a></td>\n" +
+                        "<td><a href=\"productdetails.html?id=" + result[i].product_id + "\">" + result[i].product_trademark + "</a></td>\n" +
+                        "                                            </tr>";
+                    html += tr;
+                }
+                $('tbody').html(html);
+            }
+
+        });
+    }
+
+    function search_enter() {
+        if (event.keyCode == 13) {
+            $.ajax({
+                url: "https://madamapi.herokuapp.com/api/timkiem",
+                method: "GET",
+                data: {
+                    search: $('input[name=search]').val(),
+                    page: 1
+                },
+                success: function (result) {
+                    var html = "";
+                    for (i = 0; i < result.length; i++) {
+                        var tr = "    <tr>\n" +
+                            "<td><img src=\"" + result[i].product_img +
+                            "\"/></td>\n" +
+                            "<td><a href=\"productdetails.html?id=" + result[i].product_id + "\">" + result[i].product_name + "</a></td>\n" +
+                            "<td><a href=\"productdetails.html?id=" + result[i].product_id + "\">" + result[i].product_trademark + "</a></td>\n" +
+                            "                                            </tr>";
+                        html += tr;
+                    }
+                    $('tbody').html(html);
+                }
+            });
+        }
+    }
+</script>
+</html>

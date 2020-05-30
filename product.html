@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madam Boutique</title>
+    <link rel="SHORTCUT ICON"  HREF="images/model-png-1985-Windows.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/product.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <script src="https://kit.fontawesome.com/55a10c6ca4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+</head>
+<body>
+<header>
+        <div class="container-fluid position-menu">
+            <div class="row">
+                <div class="left-header col-xl-5 col-lg-5 d-none d-lg-block">
+                    <ul>
+                        <li class="menu-items parent"><a href="home.html">home</a>
+                            <ul class="submenu fix1">
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="about.html">about</a>
+                            <ul class="submenu fix1">
+                                <li><a href="about.html#contentab">History</a></li>
+                                <li><a href="about.html#creative">Creative People</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-items parent"><a href="product.html">product</a>
+                            <ul class="submenu">
+                                <li><a href="product.html">Clothes</a></li>
+                                <li><a href="product.html">Bags</a></li>
+                                <li><a href="product.html">Accessories</a></li>
+                                <li><a href="product.html">Shoes</a></li>
+                                <li><a href="product.html">Scarves</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mid-logo col-xl-2 col-lg-2 col-md-6 col-6">
+                    <a href="home.html"><img src="images/logo.jpg" alt="logo" width="100px"/></a>
+                </div>
+                <div class="right-header col-xl-5 col-lg-5 col-md-6 col-6">
+                    <div class="row">
+                        <div class="search col-md-11 col-sm-11 col-xs-11" onmouseleave="hidesearch()">
+                            <a onclick="showsearch()"  href="#"><i class="fas fa-search"></i></a>
+                            <div class="search-content" id="hide-search" style="display: none;">
+                                <div class="search-text">
+                                    <input name="search" onkeypress="search_enter()" type="text" class="form-control" placeholder="search">
+                                    <button type="button" onclick="search_product();show_content()" class="btn btn-info">Search</button>
+                                </div>
+                                <div class="search-table" >
+                                    <table class="table" id="table">
+                                        <thead>
+                                        <th>Ảnh</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Thương hiệu</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart col-md-1 col-sm-1 col-xs-1 ">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<section>
+    <div class="img-nen">
+        <img src="images/clothes.png" alt="nen">
+        <div class="text-img">
+            <h4>Product Page</h4>
+            <a href="home.html">Home</a> \ <span>Product</span>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="option">
+            <div class="option-left">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#list" aria-controls="home" role="tab" data-toggle="tab"><i class="fas fa-list active"></i></a></li>
+                    <li role="presentation"><a href="#thumb" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-th"></i></a></li>
+                </ul>
+            </div>
+            <div class="option-right">
+                <div class="size-1">
+                    <div class="form-group">
+                        <select class="form-control" name="show">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="size-2">
+                    <div class="form-group">
+                        <select class="form-control" name="show">
+                            <option value="sortby1">Sort By: Default</option>
+                            <option value="sortby2">Sort By: Name (A - Z)</option>
+                            <option value="sortby3">Sort By: Price</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="list">
+                    <div class="content-left">
+                        <!--List Show-->
+                            <!-- product API data -->
+                    </div>
+                </div>
+                <!--End List Show-->
+                <!--Thumb Show-->
+                <div class="tab-pane fade" id="thumb">
+                    <div class="content-left2">
+                        <!--thumb -->
+                    </div>
+                </div>
+            </div>
+            <!--End Thumb Show-->
+            <div class="content-right">
+                <div class="category-box">
+                    <div class="categories-title">
+                        <h3>Categories</h3>
+                    </div>
+                    <div class="categories-list">
+                        <ul>
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#" onclick="change(1,1)">Clothes</a></li>
+                            <li><a href="#" onclick="change(1,2)">Bags</a></li>
+                            <li><a href="#" onclick="change(1,3)">Accessories</a></li>
+                            <li><a href="#" onclick="change(1,4)">Shoes</a></li>
+                            <li><a href="#" onclick="change(1,5)">Scarves</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category-box">
+                    <div class="categories-title">
+                        <h3>Brand</h3>
+                    </div>
+                    <div class="categories-list">
+                        <ul>
+                            <li><a href="#">Dior</a></li>
+                            <li><a href="#">Prada</a></li>
+                            <li><a href="#">Hermes</a></li>
+                            <li><a href="#">Gucci</a></li>
+                            <li><a href="#">Chanel</a></li>
+                            <li><a href="#">Versace</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="showing-item">
+                <div class="showing-left">
+                    <ul>
+                        <li><a href="#" onclick="change(1,1)">1</a></li>
+                        <li><a href="#" onclick="change(1,2)">2</a></li>
+                        <li><a href="#" onclick="change(1,3)">3</a></li>
+                        <li><a href="#" onclick="change(1,4)">4</a></li>
+                        <li><a href="#" onclick="change(1,5)">5</a></li>
+                        <li><a href="#" onclick="change(1,5)">6</a></li>
+                        <li><a href="#" onclick="change(1,5)">7</a></li>
+                    </ul>
+                </div>
+                <div class="showing-right">
+                    <p>Showing 1 - 12 of 13 items</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-left">
+            <div class="logo-f">
+                <img src="images/logof.jpg.png"/>
+            </div>
+            <div class="ct-name">
+                <p>Madam Boutique Store</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="open-time">
+                <h3>Opening Time</h3>
+                <p>Mon-Fri 8AM-10PM</p>
+                <p>Sat 9AM-10PM</p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/"><p>Email</p></a>
+            </div>
+            <div class="customer-sv">
+                <h3>Customer Service</h3>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <a href="about.html"><p>About Us</p></a>
+            </div>
+        </div>
+        <div class="btt-button">
+            <a class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <div class="no-copy">
+            <p>Design By Team2 Project No &copy; All Right Reserved 2019</p>
+        </div>
+    </div>
+    <!-- Subiz -->
+    <script>
+        (function(s, u, b, i, z){
+            u[i]=u[i]||function(){
+                u[i].t=+new Date();
+                (u[i].q=u[i].q||[]).push(arguments);
+            };
+            z=s.createElement('script');
+            var zz=s.getElementsByTagName('script')[0];
+            z.async=1; z.src=b; z.id='subiz-script';
+            zz.parentNode.insertBefore(z,zz);
+        })(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+        subiz('setAccount', 'acqncnyqfvkzqvqwrgih');
+    </script>
+    <!-- End Subiz -->
+</footer>
+</body>
+<script type="text/javascript" src="js/nivoshow.js"></script>
+<script type="text/javascript" src="js/showbutton.js"></script>
+<script type="text/javascript" src="js/scrollhide.js"></script>
+<script type="text/javascript" >
+    $(".content-left").html("<img class='loading' src='images/loadinggif.gif'/>");
+    change(1,1);
+    function change(page,cate_id) {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/product",
+            method : "GET",
+            data: {
+                page: page,
+                cate_id : cate_id
+            },
+            success: function (result) {
+                setTimeout(function () {
+                    $(".content-left").html(" ");
+                var html ="";
+                for (i = 0; i < result.length; i++){
+                    var html2 =  "<div class=\"content-box\">\n" +
+                        "                    <div class=\"img-product\">\n" +
+                        "                        <a href=\"productdetails.html?id="+result[i].product_id+"\">\n" +
+                        "                            <img src=\"" + result[i].product_img+
+                        "\" alt=\"productimg\">\n" +
+                        "                        </a>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"info-product\">\n" +
+                        "                        <div class=\"info-top\">\n" +
+                        "                            <a href=\"#\">" + result[i].product_trademark+
+                        "</a>\n" +
+                        "                            <h5><a href=\"productdetails.html?id="+result[i].product_id+"\">" + result[i].product_name+
+                        "</a></h5>\n" +
+                        "                            <span>$" + result[i].price+
+                        "</span>\n" +
+                        "                        </div>\n" +
+                        "                        <div class=\"info-bottom\">\n" +
+                        "                            <p>" + result[i].product_des+
+                        "</p>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                </div>";
+                    //   $(".content-left").append(html);
+                    html = html + html2;
+                }
+                $(".content-left").html(html);
+                },500);
+                var html0 ="";
+                for (i = 0; i < result.length; i++){
+                    var html3 =  "          <div class=\"content-box2\">\n" +
+                        "                    <div class=\"img-product2\">\n" +
+                        "                        <a href=\"productdetails.html?id="+result[i].product_id+"\">\n" +
+                        "                            <img src=\"" + result[i].product_img+
+                        "\">\n" +
+                        "                        </a>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"info-product2\">\n" +
+                        "                        <div class=\"info-top2\">\n" +
+                        "                            <a href=\"#\">" + result[i].product_trademark+
+                        "</a>\n" +
+                        "                            <h5><a href=\"productdetails.html?id="+result[i].product_id+"\">" + result[i].product_name+
+                        "</a></h5>\n" +
+                        "                            <span>$" + result[i].price+
+                        "</span>\n" +
+                        "                        </div>\n" +
+                        "                    </div>\n" +
+                        "                </div>";
+                    //   $(".content-left").append(html);
+                    html0 = html0 + html3;
+                }
+                $(".content-left2").html(html0);
+            }
+        });
+    }
+</script>
+<script type="text/javascript" >
+
+    function search_product() {
+        $.ajax({
+            url: "https://madamapi.herokuapp.com/api/timkiem",
+            method: "GET",
+            data : {
+                search : $('input[name=search]').val(),
+                page : 1
+            },
+            success: function (result) {
+                var html = "";
+                for(i=0;i<result.length;i++){
+                    var tr = "    <tr>\n" +
+                        "<td><img src=\"" + result[i].product_img+
+                        "\"/></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                        "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                        "                                            </tr>";
+                    html +=tr;
+                }
+                $('tbody').html(html);
+            }
+
+        });
+    }
+    function search_enter() {
+        if(event.keyCode == 13){
+            $.ajax({
+                url : "https://madamapi.herokuapp.com/api/timkiem",
+                method: "GET",
+                data : {
+                    search : $('input[name=search]').val(),
+                    page : 1
+                },
+                success: function (result) {
+                    var html = "";
+                    for(i=0;i<result.length;i++){
+                        var tr = "    <tr>\n" +
+                            "<td><img src=\"" + result[i].product_img+
+                            "\"/></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_name+ "</a></td>\n" +
+                            "<td><a href=\"productdetails.html?id="+result[i].product_id+"\">" +  result[i].product_trademark+ "</a></td>\n" +
+                            "                                            </tr>";
+                        html +=tr;
+                    }
+                    $('tbody').html(html);
+                }
+            });
+        }
+    }
+</script>
+</html>
